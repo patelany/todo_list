@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="form-heading">
+                <h1>Add Project</h1>
+            </div>
+            <div class="todo-heading">
+                <h1>Current ToDo List</h1>
+            </div>
+            <div class="form">
+                <button class="add-todo-button">Add New ToDo</button>
+                <div id="add-todo-form" style="display:none">
+                    <form id="add-todo">
+                        <!--<label for="Project">Project:</label>
+                        <select id="Project", name="Project">
+                            <option value="DefaultProject">Default Project</option>
+                            <option vlaue="Create-New-Project">Create New Project</option>
+                        </select> -->
+                        <label for="Title">Title:</label>
+                        <input type="text" id="Title" name="Title">
+                        <label for="Description">Description:</label>
+                        <input type="text" id="Description" name="Description">
+                        <label for="DueDate">Due Date:</label>
+                        <input type="date" id="DueDate" name="DueDate">
+                        <label for="Priority">Priority:</label>
+                        <select id="Priority", name="Priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                        <label for="CheckList"> Checklist Items Added (if any):</label>
+                        <ul class="todo-ul"></ul>
+                    </form>
+                    <input type="text" id="add-to-checklist" name="add-to-checklist" placeholder="Add checklist item">
+                    <button class="add-to-checklist">Add Item To Checklist</button>
+                    <br>
+                    <button type="submit" class="submit-button">Submit ToDo</button>
+                    <button type="reset" class="reset-button">Reset Form</button>
+                </div>
+            </div>
+            <div class="projects"></div>
+        </div>
+        <script defer src="main.js"></script>
+    </body>
+</html>
